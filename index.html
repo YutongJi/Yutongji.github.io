@@ -1,136 +1,183 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Html Cheat Sheet</title>
+	<title>Yutong Ji</title >
+
+	 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/45fd1ea0f1.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style"  type="text/css" rel="stylesheet" href="">
+	
+
+
+
+
+
 </head>
 <body>
-	<a href="blog.html">Go to blog</a>
-	<br>
-
-	<h1 title="my company"> Heading One </h1>
-    <h2>Heading Two</h2>
-    <h3>Heading There</h3>
-	<h4>Heading Four</h4>
-	<h5>Heading Five</h5>
-	<h6>Heading Six</h6>
+	<section class="s1">
+		<div class="main-container">
 
 
-	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut <strong>askd</strong> labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure <em>dolor in reprehenderit</em> in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. <a href="http://google.com" target="_blank">Excepteur sint 
-	occaecat cupidatat</a> non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
+			<div class="greeting-wrapper">
+				<h1>Hi, I'm Yutong Ji</h1>
+			</div>
 
 
-	<!--Lists-->
-	<ul>
-		<li>List Item 1</li>
-		<li>List Item 2</li>
-		<li>List Item 3</li>
-	</ul>
-	<ol>
-		<li>List Item 1</li>
-		<li>List Item 2</li>
-		<li>List Item 3</li>
-	</ol>
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
+					<div class="dots-wrapper">
+						<div id="dot-1" class="browser-dot"></div>
+						<div id="dot-2" class="browser-dot"></div>
+						<div id="dot-3" class="browser-dot"></div>
+					</div>
+					<ul id="navigation">
+						<li><a href="#contact-form">Contact</a></li>
+					</ul>
+				</div>
 
-	<!--Tables-->
-	<table>
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Email</th>
-				<th>Age</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Sam Smith</td>
-				<td>aab@gmail.com</td>
-				<td>33</td>
-			</tr>		
-		</tbody>
-	</table>
+				<div class="left-column">
+					<img id="profile_pic" src="images/personalimg.jpeg" alt="">
+					<h5 style="text-align: center; line-height: 0;" >Personalize Theme</h5>	
+					<div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+					</div>	
+					<p id="settings-note">*Theme settings will be saved for<br> your next visit</p>		
+				</div>
 
-	<br>
-	<hr>
-	<br>
+				<div class="right-column">
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>What I do</h3>
+							<p>I am looking for entry level softerware engineer job. </p>
+							<div id="corner-bl" class="corner"></div>
+							<div id="corner-br" class="corner"></div>
+						</div>		
+					</div>
+				</div>
 
-	<!--Forms-->
-	<form action="process.php" method="POST">
-		<div>
-			<label>First Name </label>
-			<input type="text" name="firstName" placeholder="Enter First Name">
+
+
+
+
+
+			</div>
 		</div>
-		<br>
-		<div>
-			<label>Last Name </label>
-			<input type="text" name="lastName">
-		</div>
-		<br>
-		<div>
-			<label>Email </label>
-			<input type="email" name="email">
-		</div>
-		<br>
-		<div>
-			<label>Birthday</label>
-			<input type="date" name="birthday">
-		</div>
-		<br>
-		<div>
-			<label>Age</label>
-			<input type="number" name="age" value="30">
-		</div>
-		<br>
-		<div>
-			<label>Gender</label>
-		    <select name="gender">
-				<option value="male">Male</option>
-				<option value='female'>Female</option>
-				<option value="other">Other</option>
-			</select>
-		</div>
-		<br>
-		<div>
-			<label>Message </label>
-			<textarea name="message"></textarea>
-		</div>
-		<br>
-		<input type="submit" name="submit" value="Submit">
-		<br>
-	</form>
-	<br>
-    
-	<!--button-->
-	<button click="SomeFunction">click me</button>
+	</section>
 
 
+	<section class="s2">
+		<div class="main-container">
+			<div class="about-wrapper">
+				<div class="skills-wrapper">
+					<h3>Top Expertise</h3>
+					<p>Front-end engineer with a solid background in Mathematics and Physics.
+					 <a target="blank" href="resume.pdf">Download Resume</a></p>
+					 <div id="skills">
+					 	<ul>
+					 		<li>Python</li>
+					 		<li>C++</li>
+					 		<li>HTML/CSS</li>
+					 		<li>Javascript</li>
+					 		<li>Postgres</li>
+					 	</ul>
+					 	<ul>
+					 		<li>Matlab</li>
+					 		<li>Mathematica</li>
+					 		<li>IDL</li>
+					 		<li>Flask</li>
+					 		<li>Linux</li>
+					 	</ul>					 	
+					 </div>
 
-    <br>
-    <br>
-    <br>
+				</div>
+				<div class="social-links">
+					<h5>Find me on</h5>
+					<ul> 
+						<li><a href="https://www.linkedin.com/in/yutong-ji-9452b313a/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="https://github.com/YutongJi"><i class="fab fa-github"></i></a></li>
+						<li><a href="https://www.facebook.com/Janetnicetomeetu/"><i class="fas fa-at"></i></a></li>
+						<li><a href="#"><i class="fab fa-weixin"></i></a></li>	
 
+					</ul> 
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<!--Images-->
-	<a href="ample.jpeg">
-		<img src="sample.jpeg" alt="My Sample Image" width="200" height="200">
-	</a>
-    <!--Quatations-->
-    <blockquote cite="https://towardsdatascience.com/3-numpy-image-transformations-on-baby-yoda-c27c1409b411">
-    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
-    </blockquote>
-    <!--Abbrevations-->
-    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome.</p>
-    <p><cite>HTML crash course</cite> by Brad Travery</p>
-	<div style="margin-top: 500px"></div>
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center">Some of my past projects</h3>
+			<div class="post-wrapper">
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/home.png" >
+						<div class="post-preview">
+							<h6 class="post-title">LSRS Database</h6>
+							<p class="past-intro">Designed & built a database magegement system for furniture company.
+							</p>
+							<a href="post1.html">Read More</a>
+						</div>
+				     </div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/intersection.png" >
+						<div class="post-preview">
+							<h6 class="post-title">Intersection Simulation</h6>
+							<p class="past-intro">Designed, built & conduct simulataion for a busy traffic intersection.</p>
+							<a href="post2.html">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/post3.png" >
+					    <div class="post-preview" >
+							<h6 class="post-title">Solar Limb Darkening</h6>
+							<p class="past-intro">Developed algorithm, implement numerical fitting models. </p>
+							<a href="post3.html">Read More</a>
+						</div>
+					</div>
+				</div>
+
+			</div> 
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+			<h3 style="text-align:center">Get In Touch</h3>
+			<p style="text-align: center">Drop me an e-mail at <strong>yutongji233@gmail.com</strong> or simply fill out the form below and I will reply to you soon!</p>
+			<br>
+			<form id="contact-form">
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label> Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input type="submit" id="submit-btn" value="Send">
+			</form>
+		</div>
+	</section>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
