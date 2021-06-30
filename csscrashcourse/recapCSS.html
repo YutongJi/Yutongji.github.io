@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS basics</title>
+	<link rel="stylesheet" href="recapCSS.css">
+</head>
+<body>
+	<header id="main-header">
+		<div class = container >
+			<h1>CSS Basics</h1>
+		</div>
+	</header>
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="#basic-settings">BasicsSettings</a></li>
+				<li><a href="#container-settings">ContainerSettings</a></li>
+				<li><a href="#listsforms">List&Forms</a></li>
+				<li><a href="#floatalignment">Float&Alignment</a></li>
+				<li><a href="#positioning">Positioning</a></li>
+				<li><a href="#pseudo-classes">PseudoClasses</a></li>
+				<li><a href="#adapting-size">Adapting Size</a></li>
+				<li><a href="csscheatsheet/index.html">CSSCheatSheet</a></li>
+				<li><a href="mywebsite/index.html">WebsiteExample</a></li>
+				<li><a href="../html/recapHTML.html">HTMLBasics</a></li>
+				<li><a href="#more-tips">MoreTips</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="basic-settings">
+		<div class="container">
+			<h3><a href="#main-header" style="text-decoration: none">Basic Settings</a></h3>
+			<p>
+				At the very first, you have to link to the CSS file by speciflying the following if you want to use external CSS:
+			</p>
+			<img src="recapCSSimages/linkcss.png" alt="linkcss" width=500> 
+			<p>The basical css syntax looks like this: </p>
+			<img src="recapCSSimages/syntax.png" alt="syntax" width=500>	
+			<p>
+				To start with the css file, you first specify the whole body area, where you can generally set the <strong>background-color, color(color of the text), font(family, size, weight), margin, padding, lineheight(space btw lines, usually use the unit "em")</strong>.	
+				<strong>!ATTENTION</strong> dot "." is not needed in front of the body.	
+			</p>
+			<p>
+				A small tip here is instead of saying <strong>background-color: red</strong> we can always make it short as <strong>background: red</strong>.
+			</p>
+		    <img src="recapCSSimages/bodysetting.png" alt="bodysetting" width=500>	
+		    <p>Font families in CSS:</p>
+		    <img src="recapCSSimages/fontfamily.png" alt="fontfamily" width=500>
+		</div>
+	</section> 
+	<section id="container-settings">
+		<div class="container">
+			<h3><a href="#main-header" style="text-decoration: none">Container Settings</a></h3>
+			<p>
+				Basically, you might want to put your content in containers. Inside each container, you can still have boxes, categories, forms, list, blocks and etc. Container is like an overall large box which covers all the settings inside it. So within a container, you can set the following attributes: <strong>width</strong>, <strong>margin</strong>. 960px is usually the width for a website. However, setting width to a fixed length, will have some problems if you want to make the web window smaller, so it would be beter to set it to a percentage, like: 80%. If you set margin to "auto" it will automatically center the container since auto means setting same margins for left and right.	
+				Of course, you can set the colors to those you like as well. 			
+			</p>	
+			<img src="recapCSSimages/container.png" alt="container" width=500>
+			<p>
+				The difference btw margin, padding and border is illustrated as followed
+		    </p>
+			<img src="recapCSSimages/paddingdiff.png" alt="paddingdiff" width=500>
+			<p>
+				For setting those, there are several different ways:		
+			</p>
+			<img src="recapCSSimages/paddingsett.png" alt="paddingsett" width=500>
+			<p>
+				Remember the order from left to right in second case is: top, right, bottom and left. Here is an example:			
+			</p>
+			<img src="recapCSSimages/paddingexam.png" alt="paddingexam" width=500>
+			<p> Using <strong>border-radius</strong> you can make round edges.</p>
+			<p>If you want change text style inside some specific container, just specify the name of that container then followed with the text that you want to change. The settings could be <strong>font(size, family, style)</strong>, <strong>text-decoration, text-transform, letter-spacing, word-spacing, text-align: center</strong>.</p>	
+			<img src="recapCSSimages/textstyl.png" alt="textstyl" width=500>
+		</div>	
+	</section>
+	<section id="listsforms">
+		<div class="container">
+			<h3><a href="#main-header" style="text-decoration: none">Lists & Forms</a></h3>
+			<p>First, you can make a category container to hold the lists.</p>
+			<p>
+				To make a normal list style, you can use following settings: first set list style in <strong>.categoty ul</strong> with <strong>padding</strong>, <strong>list-style: square</strong> or even <strong>list-style-image: url("")</strong>. And for each list you can set border and padding.	
+			</p>
+			<p>
+				For each list element, you can add an link. Links have some decorations you can do: <strong>text-decoration</strong>, <strong>color</strong>.
+				In addition, to have some effect on the links you can do <strong>a:hover{color: ...}</strong> which will change the color of the item when your cursor hover over it. <strong>a: active{color: ...}</strong> which will change the color of the item when you click on it. <strong>a: visited{color: ...}</strong> will change the color of the link if you have visited it before. Above we all used <strong>a</strong> to refer to the link that we want to set, if some links have been attributed to a class we could also use that class to specify the link. 
+				For example, <strong>.button:hover{background-color:...;color: ... }</strong> if the link has been given a class as "button".
+			</p>
+
+			<img src="recapCSSimages/ulex01.png" alt="ulex01" width=500>
+			<img src="recapCSSimages/ulex02.png" alt="ulex02" width=300>
+			<img src="recapCSSimages/ulex03.png" alt="ulex03" width=300>
+			<p>
+				If you want to have a navbar style lists, first you can create a navbar div and make a list inside it. Choose <strong>list-style</strong> to <strong>none</strong> in <strong>ul</strong>; Choose <strong>display</strong> to <strong>inline</strong> in <strong>li</strong>.
+			</p>
+			<p>
+				Don't forget to add link to each list element and also you can set <strong>color</strong>, <strong>text-decoration</strong>, <strong>font-size</strong>, <strong>padding</strong> to the link style.
+			</p>
+			<img src="recapCSSimages/ulex11.png" alt="ulex11" width=500>
+			<img src="recapCSSimages/ulex12.png" alt="ulex12" width=500>
+
+			<p>We start with adding some padding to the form area which is classifies as "my-form". And then, use <strong>.my form .form-group{padding:...}</strong> to add some spave below each form. Use <strong>lable{display: block}</strong> you can make the label name and the input area separated into different liness.</p>
+			<p>
+				Apart from that, we can further set the size of each input area. According to the form we have made, the size we want to keep the same are class is input but only when the type is "text" and class is textarea, so we have the following setting: 
+			</p>
+			<img src="recapCSSimages/formex01.png" alt="formex01" width=500>
+			<img src="recapCSSimages/formex02.png" alt="formex02" width=500>
+			<br>
+			<img src="recapCSSimages/formex03.png" alt="formex03" width=1000>			
+		</div>
+	</section>
+	<section id="floatalignment">
+		<div class="container">
+			<h3><a href="#main-header" style="text-decoration: none">Float & Alignment</a></h3>
+			<p>
+				Use <strong>float</strong>, you can have you content stay in one side of the page or have different blocks align in the same line.
+				For example, you now have three blocks align on top of each other and you want to make them in the same horizontal position, then you can specify inside the block the following <strong>float: left; width: 33.3%</strong>. However, if you want to add some paddings or borders, then you might wanna add <strong>box-size: border-box</strong> which is to ensure that whole box including padding and border will be counted into the 33.3% which is alocated to each block.
+			</p>
+			<p>Similarly, you can add a sidebar to the main block.</p>
+			<p>DO REMEMBER to <strong>clear</strong>it each time you finish using float, otherwise, the content after the floated area would be messed up. 
+			</p>
+			<img src="recapCSSimages/floaex01.png" alt="floaex01" width=500>
+			<img src="recapCSSimages/floaex02.png" alt="floaex02" width=500>
+			<br>
+			<img src="recapCSSimages/floaex03.png" alt="floaex03" width=1000>
+		</div>		
+	</section>
+	<section id="positioning">
+		<div class="container">
+			<h3><a href="#main-header">Positioning in CSS</a></h3>
+			<p>
+				There are <strong>6</strong> types of positions in CSS: <strong>static(by default)</strong>, <strong>relative</strong>, <strong>absolute</strong>, <strong>fixed</strong>, <strong>initial</strong>, and <strong>inherit</strong>.
+			</p>
+			<p>
+				By specify <strong>positioin: relative;</strong> in the container that you want your elements to be referenced to and <strong>position: absolute; </strong> for your elements, you can put your elements to any place that you want inside the container.
+			</p>
+			<p>
+				You can also add background images to the containers using <strong>background-image: url('')</strong> and you can change the position of that background by <strong>background-position</strong>, you can use either e.g. <strong>100px 200px</strong> or strings like <strong>center top</strong>. The background image will by default repeat itself if it is too small to fit the whole container, but you can choose to disallow that by setting <strong>background-repeat: none</strong>.
+		    </p>
+		    <p>
+		    	To have a element fixed on certain position of the screen, you can use <strong>position: fixed</strong> and then specify the postion that you have in mind, like <strong>top: 400px</strong>.
+		    </p>
+		    <p>
+		    	Attention here, the floating element has two classes <strong>class="fix-me button"</strong>, you can do it just by put them along to each other.
+		    </p>
+		    <img src="recapCSSimages/posiex01.png" alt="posiex01" width=500>
+		    <img src="recapCSSimages/posiex02.png" alt="posiex02" width=500>
+		    <br>
+		    <img src="recapCSSimages/posiex03.png" alt="posiex03" width=1000>		
+		</div>	
+	</section>
+	<section  id="pseudo-classes">
+		<div class="container">
+			<h3><a href="#main-header" style="text-decoration: none">Pseudo Classes</a></h3>
+			<p>
+				You can use pseudo classes as selector to change certain elements, they could be certain paragraphs, items, etc...	Make sure do not leave space between <strong>li:</strong> and the following <strong>child</strong>stuff.
+			</p>
+			<img src="recapCSSimages/psedex01.png" alt="psedex01" width=500>
+			<img src="recapCSSimages/psedex02.png" alt="psedex02" width=500>
+			<br>
+			<img src="recapCSSimages/psedex03.png" alt="psedex03" width=1000>		
+		</div>
+    </section>
+    <section id="adapting-size">
+    	<div class="container">
+    		<h3><a href="#main-header" style="text-decoration: none">Adapting Size</a></h3>
+    		<p>
+    			If you wanna change the size of the container if the size of window changes so that the text could not fit in the container, you can use <strong>min-height:</strong> in the container.	
+    		</p>
+    		<p>
+    			When you have several floating area sit next to each other and you want them to line on top of each other if the window's width becomes too narrow, you can use <strong>@media(max-width: ){}</strong> as in the following example:
+    		</p>
+    		<img src="recapCSSimages/adapex01.png" alt="adapex01" width=350>
+     		<img src="recapCSSimages/adapex02.png" alt="adapex02" width=350>
+    		<img src="recapCSSimages/adapex03.png" alt="adapex03" width=350>
+    		<h4>More example</h4>
+     		<img src="recapCSSimages/adapex11.png" alt="adapex11" width=350>
+     		<img src="recapCSSimages/adapex12.png" alt="adapex12" width=350>   		
+
+    	</div>    	
+    </section>
+    <section id="more-tips">
+    	<div class="container">
+    		<h3><a href="#main-header" style="text-decoration:none">More Tips</a></h3>
+    		<h4>1. Create Variables</h4>
+			<p>
+				Use <strong>:root{--name:}</strong> at the begining of the CSS file to create certain variables that you would like to use (<strong>var(--name)</strong>) later in the context.
+			</p>
+			<h4>2. Zebra strip like color</h4>
+			<p>
+				Since it seems containers are not allowed for pseudo classes, to make colors different every second second, use repeated class names like:
+			<p> 
+			<img src="recapCSSimages/moreex11.png" alt="moreex11.png" width=500>  	
+			<img src="recapCSSimages/moreex12.png" alt="moreex12.png" width=500> 
+			<h4>3. Use google fonts</h4>
+			<p>
+				If you don't like the fonts provided by defaulf, you can use online google fonts. You just go search for google font and select the one that you would like to use. Then on the right side of the webpage, copy the link to put it on your html file just below <strong>title, meta</strong>. And copy the names to the place that you want to use them.
+			</p> 
+			<img src="recapCSSimages/moreex31.png" alt="moreex31.png" width=500>
+			<h4>4. Centering</h4>
+			<p>
+				To center the text in the middle of the container horizontally: <strong>text-align: center</strong> or <strong>justify-content: center</strong>; vertically: <strong>align-content: center</strong>.
+			</p>
+			<h4>5. Flex vs Grid</h4>
+			<p>
+				Use <strong>display: flex</strong> in the container that you want your elements aline. The effect is similiar to float.
+				In addition to flex, you can use <strong>grid</strong> as well. The syntax might be a bit different but you can get the same effect. 
+				Read more about <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flex</a> and <a href="https://dennisivy-portfolio.s3-us-west-2.amazonaws.com/Flexbox+vs.+CSS+Grids+infographic.pdf">the difference between the two.</a>
+			</p>
+			<img src="recapCSSimages/moreex51.png" alt="moreex51.png" width=300>		
+			<img src="recapCSSimages/moreex52.png" alt="moreex52.png" width=300>		
+
+			<h4>6. Picture Settings</h4>
+			<p>
+				Use <strong>width, height</strong> to set the size of picture. If you want your picture not being distorted, then use <strong>object-fit: cover</strong>. Since image is an inline element, so if you want to make it centered, you could first make it as a block element by <strong>display: block</strong> then use <strong>justify-content: center</strong>.		
+			</p>
+			<img src="recapCSSimages/moreex61.png" alt="moreex61.png" width=500>
+			<h4>7. Alternative way to adapt size in grid</h4>		
+			<p>
+				Use <strong>grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))</strong>. By the way, you can use <strong>gap: 20px</strong> to seperate the blocks between grids.
+			</p>
+			<img src="recapCSSimages/moreex71.png" alt="moreex71" width=500>
+
+
+
+
+    	</div>
+    	
+    </section>
+ 	<footer id="main-footer">
+		<p>Copyright &copy; 2021 Crash Course by Traversy Media, Origanized by Yutong</p>
+	</footer>
+</body>
+</html>
